@@ -93,7 +93,7 @@ public class LoginController {
 	
 	@RequestMapping(value = "/addStudentAssgDetails.html", method = RequestMethod.GET)
 	public String addStudentAssgDetails(@ModelAttribute("studentAssgDetails") StudentAssgDetails studentAssgDetails, ModelMap map) {
-		log.info("in login get method==============nikil");
+		log.info("in login get method==============nikil bbb");
 		
 		List<String> yearList = null;
 		List<String> yearList1 = new ArrayList<>();
