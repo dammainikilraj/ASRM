@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="lexiconBaseLayout" template="/WEB-INF/views/lexiconBaseTemplate.jsp">
+		<put-attribute name="title" 	value="" />
+		<put-attribute name="head" 	value="/WEB-INF/views/head.jsp" />
+		<put-attribute name="header" 	value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" 		value="/WEB-INF/views/menu.jsp" />
+		<put-attribute name="body" 		value="" />
+		<put-attribute name="rightmenu" value="/WEB-INF/views/rightmenu.jsp" />
+		<put-attribute name="footer" 	value="/WEB-INF/views/footer.jsp" />
+	</definition>
+	
+	<definition name="lexiconBaseLayout1" template="/WEB-INF/views/lexiconBaseLayout1.jsp">
+		<put-attribute name="title" 	value="" />
+		<put-attribute name="head" 	value="/WEB-INF/views/head.jsp" />
+		<put-attribute name="body" 		value="" />
+	</definition>
+	
+	<definition name="lexiconBaseLayout2" template="/WEB-INF/views/lexiconBaseLayout2.jsp">
+		<put-attribute name="title" 	value="" />
+		<put-attribute name="head" 	value="/WEB-INF/views/head.jsp" />
+		<put-attribute name="header" 	value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="footer" 	value="/WEB-INF/views/footer.jsp" />
+		<put-attribute name="body" 		value="" />
+	</definition>
+	
+	<definition name="lexiconBaseLayout3" template="/WEB-INF/views/lexiconBaseLayout2.jsp">
+		<put-attribute name="title" 	value="" />
+		<put-attribute name="head" 	value="/WEB-INF/views/head.jsp" />
+		<put-attribute name="header" 	value="/WEB-INF/views/header_beforeLogin.jsp" />
+		<put-attribute name="footer" 	value="/WEB-INF/views/footer.jsp" />
+		<put-attribute name="body" 		value="" />
+	</definition>
+
+	
+
+	<!-- for Super Admin -->
+	 <!-- <definition name="superAdminBaseLayout" template="/WEB-INF/views/lexicon/pageLayout/lexiconBaseTemplate.jsp">
+		<put-attribute name="title" 	value="" />
+		<put-attribute name="head" 	value="/WEB-INF/views/lexicon/pageLayout/head.jsp" />
+		<put-attribute name="header" 	value="/WEB-INF/views/lexicon/pageLayout/header.jsp" />
+		<put-attribute name="menu" 		value="/WEB-INF/views/lexicon/pageLayout/superAdminMenu.jsp" />
+		<put-attribute name="body" 		value="" />
+		<put-attribute name="rightmenu" value="/WEB-INF/views/lexicon/pageLayout/rightmenu.jsp" />
+		<put-attribute name="footer" 	value="/WEB-INF/views/lexicon/pageLayout/superAdminFooter.jsp" />
+	</definition> -->
+
+
+<!-- 	
+	 <definition name="lexiconBaseLayout" template="/WEB-INF/views/lexicon/pageLayout/lexiconBaseTemplate.jsp">
+		<put-attribute name="title" 	value="" />
+		<put-attribute name="head" 	value="/WEB-INF/views/lexicon/pageLayout/head.jsp" />
+		<put-attribute name="header" 	value="/WEB-INF/views/lexicon/pageLayout/header.jsp" />
+		<put-attribute name="menu" 		value="/WEB-INF/views/lexicon/pageLayout/menu.jsp" />
+		<put-attribute name="body" 		value="" />
+		<put-attribute name="rightmenu" value="/WEB-INF/views/lexicon/pageLayout/rightmenu.jsp" />
+		<put-attribute name="footer" 	value="/WEB-INF/views/lexicon/pageLayout/footer.jsp" />
+	</definition> -->
+	
+<!-- 	
+	 <definition name="lexiconEmailLayout" template="/WEB-INF/views/lexicon/pageLayout/emailBaseTemplate.jsp">
+		<put-attribute name="title" 	value="" />
+		<put-attribute name="head" 	value="/WEB-INF/views/lexicon/pageLayout/head.jsp" />
+		<put-attribute name="header" 	value="/WEB-INF/views/lexicon/pageLayout/header.jsp" />
+		<put-attribute name="emailMenu" 		value="/WEB-INF/views/lexicon/pageLayout/emailMenu.jsp" />
+		<put-attribute name="emailTemplateHeader" 		value="/WEB-INF/views/lexicon/pageLayout/emailTemplateHeader.jsp" />
+		<put-attribute name="emailFields" 		value="" />
+		<put-attribute name="emailFooter" 	value="/WEB-INF/views/lexicon/pageLayout/emailFooter.jsp" />
+	</definition> -->
+	
+	
+
+</tiles-definitions>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="signinform" extends="lexiconBaseLayout1">
+		<put-attribute name="title" value="LOGIN" />
+		<put-attribute name="body" value="/WEB-INF/views/signin.jsp" />
+	</definition>
+
+	<definition name="mainPage" extends="lexiconBaseLayout">
+		<put-attribute name="title" value="WELCOME" />
+		<put-attribute name="body" value="/WEB-INF/views/mainPage.jsp" />
+	</definition>
+
+	<definition name="addStudentAssgDetails" extends="lexiconBaseLayout">
+		<put-attribute name="title" value="STUDENT ASSG DETAILS" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/addStudentAssgDetails.jsp" />
+	</definition>
+
+	<definition name="viewAssignments" extends="lexiconBaseLayout">
+		<put-attribute name="title" value="VIEW STUDENT ASSG DETAILS" />
+		<put-attribute name="body" value="/WEB-INF/views/viewAssignments.jsp" />
+	</definition>
+	<definition name="addEvaluator" extends="lexiconBaseLayout">
+		<put-attribute name="title" value="ADD EVALUATOR" />
+		<put-attribute name="body" value="/WEB-INF/views/addEvaluator.jsp" />
+	</definition>
+
+
+</tiles-definitions>

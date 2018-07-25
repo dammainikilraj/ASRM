@@ -1,0 +1,33 @@
+.btn-border-radious-none .btn{
+	border-radius:0;
+}
+.btn-orange,
+.btn-orange:HOVER,
+.btn-orange:FOCUS
+{
+	color:white;
+	background: #ffa200;
+			 border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color:red;
+	    
+}
+.btn-orange:ACTIVE {
+		color:white;
+
+	background: #ffa200;
+border-color: #ffa200;
+}
+
+label{
+	font-weight: 500 !important;
+}
+.red-cell {
+   background: #dbdbdb; /* Or some other color */
+}
+/* #project_invoice_list_table tbody tr td p{ */
+/* 	border-bottom: solid black; */
+/* } */
+body{
+	font-size: 13px;
+}

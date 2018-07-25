@@ -1,0 +1,1025 @@
+body{
+	     background-color: #F5F5F5; 
+	  
+}
+/* .body-container{
+	background:white;
+} */
+a,
+li,
+div,
+p,
+td,
+label,
+option,
+select
+{
+	  text-transform: capitalize;
+}
+
+.navbar-default{
+background: rgba(189,189,252,1);
+background: -moz-linear-gradient(left, rgba(189,189,252,1) 0%, rgba(189,189,252,1) 0%, rgba(65,65,135,1) 42%, rgba(42,41,117,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(189,189,252,1)), color-stop(0%, rgba(189,189,252,1)), color-stop(42%, rgba(65,65,135,1)), color-stop(100%, rgba(42,41,117,1)));
+background: -webkit-linear-gradient(left, rgba(189,189,252,1) 0%, rgba(189,189,252,1) 0%, rgba(65,65,135,1) 42%, rgba(42,41,117,1) 100%);
+background: -o-linear-gradient(left, rgba(189,189,252,1) 0%, rgba(189,189,252,1) 0%, rgba(65,65,135,1) 42%, rgba(42,41,117,1) 100%);
+background: -ms-linear-gradient(left, rgba(189,189,252,1) 0%, rgba(189,189,252,1) 0%, rgba(65,65,135,1) 42%, rgba(42,41,117,1) 100%);
+background: linear-gradient(to right, rgba(189,189,252,1) 0%, rgba(189,189,252,1) 0%, rgba(65,65,135,1) 42%, rgba(42,41,117,1) 100%);
+
+	/* background:#2a2975; */
+	  /* background-color: #1DB0E0; */
+	border-bottom: 2px solid #D1D1D1;
+	z-index:999;
+}
+
+.panel-default > .panel-heading {
+  color: white;
+  background-color: #025996;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #D5D5D5;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #EFEFEF;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+}
+
+.status_badges{
+	background:#AFAFAF;
+	/* background: #DBDBDB; */
+	/*  background: #fff none repeat scroll 0 0; */
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-top:10px;
+    margin-bottom: 15px;
+    /* min-height: 40px; */
+    width: 100%;
+}
+.module-list-page{
+	position:relative;
+	top:50px;
+}
+.status_badges_left{
+	
+ /* background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0; */
+    border-radius: 2px 0 0 2px;
+    display: block;
+    float: left;
+    font-size: 40px;
+    padding:5px ;
+   /*  height: 90px; */
+   /*  line-height: 90px; */
+    text-align: center;
+  
+   
+   
+}
+
+.image-from-gallery{
+	position:relative;
+	/* float:left; */
+	height:150px;
+	max-width: 150px;
+	max-height: 150px;
+	border:5px solid white;
+	margin:10px;
+}
+.image-from-gallery-selected{
+	position:relative;
+	/* float:left; */
+	max-width: 150px;
+	height:150px;
+	max-height: 150px;
+	border:5px solid #029AFF;
+	margin:10px;
+/*     box-shadow:0px 12px 22px 1px #333; */
+}
+/*.................profile pic  hover effect start  */
+ .profile-pic-img {
+	    position: relative;
+    max-width:90px;
+	  max-height:90px;
+	  min-width:130px;
+	  min-height: 130px;
+	   margin:8px; 
+ /* overflow: hidden;
+cursor: pointer;
+ margin:10px  auto;
+    	 padding:10px;*/
+	 border:3px solid #E0F2FF;
+	 border-radius: 50%; 
+} 
+
+ .profile-pic-img img {
+    margin: auto;
+    max-height: 125px;
+    min-height:125px;
+    max-width: 125px;
+    min-width: 125px;
+}
+ 
+
+.profile-pic-img-label {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+     bottom: -40px;
+    color: #fff;
+    left: 0;
+    margin: 0;
+   /*  padding: 10px; */
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition:0.1s all;
+}
+
+.profile-pic-img:hover .profile-pic-img-label {
+  bottom: 0px;
+}
+/* ....................... */
+
+.status_badges_right{
+	background:#DBDBDB;
+  margin-left: 35%;
+    padding: 5px 10px;
+}
+.lexicon_left_block{
+	background: url(images/lexicon_bg.png) repeat scroll 0 0;
+	min-height: 100%;
+	height: 100%;
+}
+.bg-green{
+	background: #DBDBDB;
+	color:white;
+}
+
+.bg-orangered{
+	background: #CEBA35;
+	color:white;
+}
+
+.btn {
+    border-radius: 0px;
+}
+.panel-success > .panel-heading {
+	     background-color: #5cb85c;
+    border-color: #5cb85c;
+    color: #fff;
+}
+
+.panel-warning > .panel-heading {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    color: #fff;
+}
+
+.panel-danger > .panel-heading {
+    background-color: #d9534f;
+    border-color: #d9534f;
+    color: #fff;
+}
+.success-message{
+	color:green;
+}
+.panel-heading h1,
+.panel-heading h2, 
+.panel-heading h3,
+.panel-heading h4,
+.panel-heading h5,
+.panel-heading h6{
+	margin: 1px;
+}
+aside{
+	
+	display: block; 
+}
+.right-border{
+		border-right: 2px solid #dedede;
+		
+}
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+/* input.error {
+    border: 1px solid red;
+} */
+.error-red,.error{
+	color:red !important;
+}
+
+.error{
+	
+	font-weight: 100;
+	font-size: 13px;
+}
+.checkbox-field{
+	float:left;
+	margin-right: 5px;
+	margin-left: 15px;
+	width:auto;
+}
+.leaveStatus{
+	background : #6eeab5;
+}
+
+.nav-menu-text{
+	   color: white;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hide-content{
+	display: none;
+}
+
+
+.lms-side-col{
+    /* position:fixed; */
+	background: #025996;
+	min-width: 200px;
+	
+	/* background: #1d4287; */	
+	/* height: 100%; 
+    
+	
+	    top: 1%;
+	/* padding-top:1%; */
+/*     overflow-y: hidden;
+    overflow-x: hidden; */
+    
+}
+.lms-side-col-color{
+	background: #025996;
+	/* background: #1d4287; */
+	
+}
+
+tr:nth-child(even) {background-color: #e7e7e7;}
+.lms-header-space{
+	height:20%;
+	width:auto;
+	padding:10px;
+	
+}
+.lexicon-logo1{
+	width:200px;
+	height:48px;
+	
+	/* width:225px;
+	height:90px;
+	padding:10px 5px; */
+}
+.fa-home{
+	font-size:10px;
+}
+.lexicon-logo{
+	width:237px;
+	height:135px;
+	margin-left: 96%;
+	margin-top:9%;
+}
+.lexicon-logo2{
+	width:237px;
+	height:140px;
+	margin-left: 96%;
+	margin-top:5%;
+	
+}
+/* .label{
+margin-left: 93%;
+	margin-top:9%;
+	color:black;	
+} */
+.lms-right-side-col{
+	/* position:fixed;
+	background: #EAEAEA; */
+	height: 100%;
+
+	padding-top:1%;
+	
+}
+.lms-login-container{
+	background: #1d4287;
+}
+.success-message{
+	
+	color:green;
+	
+}
+
+.body-container{
+
+/* 	-webkit-box-shadow: 0px 4px 30px -4px rgba(0,2,5,0.86);
+-moz-box-shadow: 0px 4px 30px -4px rgba(0,2,5,0.86);
+box-shadow: 0px 4px 30px -4px rgba(0,2,5,0.86); */
+}
+.ui-datepicker-month{
+	color:black;
+}
+.wrapper {
+    min-height: 100%;
+    position: static;
+    overflow: hidden;
+}
+.middle-section{
+	padding:20px 20px 10px 0px;
+	position:relative;
+	margin-top:3%;
+}
+
+.submenu {
+  display: none;
+  background: #177DC5;
+  font-size: 14px;
+}
+
+.submenu li { border-bottom: 1px solid #4b4a5e; }
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover ,.submenu a:focus{
+	border-left: 5px solid #00CCC5;
+ 
+  color: #FFF;
+}
+/*===================== side menu e ================*/
+/* =================navbar s==================== */
+.lms-navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	padding-left:21%;
+    overflow: hidden;
+	background: #025996;
+ 	    position: fixed;
+    width: 100%;
+    z-index: 99;
+    /* background-color: #1D4287; */
+}
+.lms-navbar{
+	background-color: #1D4287;
+}
+.lms-navbar-ul li {
+    float: left;
+}
+
+.lms-navbar-ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.lms-navbar-ul li a:hover:not(.active) {
+    
+	
+	background-color: #58b5f8;
+	
+}
+
+/* .active {
+    background-color: #4CAF50;
+} */
+
+/*=================== nav bar e================ */
+
+/* ============================login form s ==============================*/
+.lms-login-body {
+  /* background: white;  */ 
+  /*  background-image:  url('http://wallpaperget.com/images/grey-hd-wallpaper-29.jpg'); */
+		background-image:url(images/background_login.jpg);
+/*     background: #1d4287; lexicon background color is changed */
+
+}
+
+
+
+.login-screen{
+	max-width:420px;
+	height:300px;
+	margin: auto;
+	margin-top:16%;
+	padding:1%;
+}
+.login-screen-password-reset{
+	max-width:440px;
+	height:250px;
+	margin: auto;
+	margin-top:13%;
+	padding:1%;
+}
+.defaultPic{
+	margin-left: 70px;
+	/* margin-bottom:-50px; */
+	height:75px;
+	
+}
+.login-screen-password-page{
+	max-width:480px;
+	margin: auto;
+	margin-top:13%;
+	padding:1%;
+}
+.lms-login-form{
+	background: #dbdde0;
+	padding:5%;
+	border:10px;
+	height:330px;
+	
+}
+.lms-login-form-form{
+	background: #dbdde0;
+	padding:5%;
+	border:10px;
+	height:270px;
+}
+.lms-login-form2{
+	background: #dbdde0;
+	padding:5%;
+	border:10px;
+	height:300px;
+}
+.lms-login-form-password{
+	background: #dbdde0;
+	padding:2%;
+	border:10px;
+	height:340px;
+	
+}
+
+/* ===============login form e ===================================*/
+
+/* ==========date picker s=========== */
+ .ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+	background: #000c49;
+	color:white;
+}
+/* .ui-datepicker .ui-datepicker-next span {
+    
+    background: #025996;
+    color:white;
+}  */
+.ui-widget-header {
+    color: black;
+}
+/*=============date picker e================ */
+
+/*==============employee list s============  */
+table.dataTable thead th,
+table.dataTable tbody td{
+	padding-left: 5px;
+}
+.table-header-color{
+		background: #6eeab5;
+	color: #044A7B;
+} 
+
+table.dataTable thead th{
+	background: #6eeab5;
+	color: #044A7B;
+	border-right: 1px solid  #98AEBD;
+}
+
+.bottom-space-10,.margin-top-10{
+	margin-top: 10px;
+	
+}
+
+table.dataTable thead th:first-child{
+	border-left: 1px solid  #98AEBD;
+}
+table.dataTable.display tbody td:first-child{
+	border-left:1px solid #d7d7d7;
+}
+table.dataTable.display tbody td {
+    border-right: 1px solid #d7d7d7;
+}
+/* ===========employee list e=============== */
+
+/* ================data table start================ */
+.space-margin-right{
+	margin-right: 10px;
+}
+table.dataTable thead th {
+    background: #7bdcfc;
+    color: #044A7B;
+    border-right: 1px solid #98AEBD;
+}
+/* =================data table end =============== */
+/* .portal_bg{
+		background-image: url("../images/portalbg.jpg");
+		    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;   
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+		
+} */
+/* ========================portal page s========================== */
+/* .icon-btn{
+	padding: 3px 10px 3px 2px;
+border-radius: 50px;
+margin: 10px;
+} */
+
+.portal_bg .btn-success:HOVER,.portal_bg .btn-success:FOCUS{
+	 color: white;
+	 background-color: #2a2975; 
+	 /* background-color: #09456D; */
+/* -webkit-box-shadow: 0px 8px 23px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 23px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 8px 23px -3px rgba(0,0,0,0.75); */
+}
+
+.portal_bg .btn-success {
+	height:70px;
+    color: #2a2975;
+   	background: #FFF;;
+/*     background-color: #0281D6;  */
+    border: 3px solid #2a2975;
+    margin:5px;
+
+}
+.portal_bg .fa-inverse {
+    color: #5cb85c;
+}
+.portal_bg .btn {
+/* font-size: 12px; */
+width:100%;
+line-height: 3.429;
+}
+.portal_bg .fa-stack {
+float: left;
+margin-left: 2px;
+}
+/* .exactCenter{
+	
+
+	height:100%:
+	margin:0 auto;
+	left: 0px;
+    right: 0px;
+    bottom:0;
+	padding:0.5%;
+	border: 5px solid  rgb(224, 224, 224);
+		border-radius: 5px;
+} */
+/* .exactCenter-bg{
+	display: inline-block;
+	background: rgb(224, 224, 224);
+	background: rgba(0, 0, 0, 0.2);
+	padding:1%;
+	width:100%;
+
+} */
+/* ======================portal page e======================= */  
+/* ========leave request list page start  ================ */
+#leave_pending_list,
+#leave_approved_list,
+#leave_reject_list{
+	background: white;
+}
+
+/* ========leave request list page end  ================ */
+.leave-status-model-dialog{
+	margin:5% auto;
+	width:30%;
+	padding:1%;
+}
+/* =============menu list s================= */
+.lms-menu-list,.lms-profile-left-aside {
+    list-style-type: none;
+   height: 100%;
+   min-width: 16.6%;
+  /*   min-width: 23%; */
+/*   background:#D1D1D1;
+  color:black; */
+    background: #025996;
+    position: fixed;
+     margin: 0;
+    padding: 0;
+    overflow: auto;
+    z-index: 100;
+}
+.lms-menu-list{
+border: 1px solid #047DD2;
+}
+.lms-menu-list li a {
+    display: block;
+    /* color: #000; */
+    color:white;
+    padding: 8px 0 8px 20px;
+    text-decoration: none;
+}
+.holidayList{
+ background: #7bdcfc;
+}
+
+.lms-menu-list li {
+    text-align: left;
+   
+    border-bottom: 1px solid #047DD2;
+}
+.lms-menu-list li a.active {
+    background-color: #047DD2;
+    color: white;
+}
+
+.lms-menu-list li a:hover:not(.active) {
+    background-color: #047DD2;
+    color: white;
+}
+/*=============menu list e===================*/
+/*=================main menu portal list start=======================  */
+.portal-menu-list {
+	list-style-type:none;
+	padding-left:4px;
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+}
+/*=================main menu portal list end=========================  */
+
+
+.blink {
+    border:3px solid red;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	color : red;
+	background-color :#E8E8E8;
+}
+/* ========================= emp list page, emp edit details start=============================================== */
+.emp-id-view-details,
+.emp-id-edit,
+.emp-id-delete{
+	padding:4px 4px;
+}
+
+#lms-employee-list tr:hover,#lms-employee-list tr:focus{
+	background-color:#dadada;
+}
+/* ====emp list page, emp edit details end ====================================================== */
+/* =================responsive side bar 1===================== */
+
+.navbar-inverse{
+	margin-top:50px;
+	background: #2a2975;
+	
+}
+    body,html{
+		height: 100%;
+	}
+
+	/* remove outer padding */
+	.main .row{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/*Remove rounded coners*/
+
+	nav.sidebar.navbar {
+		border-radius: 0px;
+	}
+
+	nav.sidebar, .main{
+		-webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+	}
+
+	/* Add gap to nav and right windows.*/
+	.main{
+		padding: 10px 10px 0 10px;
+	}
+
+	/* .....NavBar: Icon only with coloring/layout.....*/
+
+	/*small/medium side display*/
+	@media (min-width: 768px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			position: absolute;
+			width: calc(100% - 40px); /*keeps 100% minus nav size*/
+			margin-left: 40px;
+			float: right;
+		}
+
+		/*lets nav bar to be showed on mouseover*/
+		nav.sidebar:hover + .main{
+			margin-left: 200px;
+		}
+
+		/*Center Brand*/
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		/*Center Brand*/
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/*Center Icons*/
+		nav.sidebar a{
+			padding-right: 54px;
+			color:white;
+		}
+
+		/*adds border top to first nav box */
+		nav.sidebar .navbar-nav > li:first-child{
+			border-top: 1px #e5e5e5 solid;
+		}
+
+		/*adds border to bottom nav boxes*/
+		nav.sidebar .navbar-nav > li{
+			border-bottom: 1px #e5e5e5 solid;
+		}
+
+		/* Colors/style dropdown box*/
+		nav.sidebar .navbar-nav .open .dropdown-menu {
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background-color: transparent;
+			border: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		/*allows nav box to use 100% width*/
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		/*colors dropdown box text */
+		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+			color: black;
+		}
+
+		/*gives sidebar width/height*/
+		nav.sidebar{
+			 width: 227px;
+			height: 100%;
+			margin-left: -160px;
+			float: left;
+			/* z-index: 777; */
+			margin-bottom: 0px;
+		}
+
+		/*give sidebar 100% width;*/
+		nav.sidebar li {
+			width: 100%;
+		}
+
+		/* Move nav to full on mouse over*/
+		nav.sidebar:hover{
+			margin-left: 0px;
+		}
+		/*for hiden things when navbar hidden*/
+		.forAnimate{
+			opacity: 0;
+		}
+	}
+
+	/* .....NavBar: Fully showing nav bar..... */
+
+	@media (min-width: 1330px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			width: calc(100% - 200px); /*keeps 100% minus nav size*/
+			margin-left: 200px;
+		}
+
+		/*Show all nav*/
+		nav.sidebar{
+			margin-left: 0px;
+			float: left;
+		}
+		/*Show hidden items on nav*/
+		nav.sidebar .forAnimate{
+			opacity: 1;
+		}
+	}
+
+	nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+		 color: black;
+		background-color: #7cc2ff;
+		
+	}
+
+	nav:hover .forAnimate{
+		opacity: 1;
+	}
+	section{
+		padding-left: 15px;
+	}
+/* =================responsive side bar 2===================== */
+  
+ /*  .lms-side-bar{
+  overflow-y: scroll;
+    height: 100%;
+  } */
+  
+  .leave_badges{
+  float:left;
+  margin-right: 5px;
+  }
+  
+ .lms-side-bar .navbar-nav > li > a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+ .lms-side-bar .navbar-nav > li > a {
+ color:#DDDDDD;
+
+ }
+  .lms-side-bar .navbar-nav > li:HOVER{
+  color:white;
+  background:#0A3240;
+ }
+ .time-sheet-table > thead > tr > th{
+	font-size: 12px;
+} 
+.ui-timepicker-table td a {
+    width: 2em;
+}
+
+.ui-timepicker-hour-cell,.ui-timepicker-minute-cell{
+	font-size: 12px;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 5px 5px; white-space: nowrap; overflow: hidden; font-size:12px}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong {  color: #3399FF; }
+
+
+.form_title{
+  width: 900px;
+   margin: 0 auto 20px auto;
+  }
+.form_round_table {
+    
+    padding-top: 8px;
+    padding-bottom: 15px;
+   
+    background-color: #446bb3;
+     border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    color: #446bb3;
+    padding:10px;
+}
+
+.form_round_table table { background-color : #fff; color : #443}
+.form_round_table table thead { background-color: #446bb3  ; color : #fff; font: bold 14px verdana; padding:4px; line-height:30px}
+.form_round_table table tbody tr:nth-child(even) {background: #CCC;}
+.form_round_table table tbody tr:nth-child(odd) {background: #FFF}
+
+
+   .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+        background-color: #FAFAFA;
+        border-color: #EEEEEE;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+    .panel-title > a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .more-less {
+        float: right;
+        color: #212121;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE;
+    }
+
+
+ 
+ .demo {
+    padding-top: 500px;
+    padding-bottom: 500px;
+}  
+
+ .dropbtn {
+  background-color: #0395FB;
+  margin-top: 17px;
+  color: white;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  }
+  .leave-polacy-dropdown {
+  position: relative;
+  display: inline-block;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 120px;
+  -webkit-box-shadow: 2px 11px 38px -5px rgba(0,0,0,0.47);
+-moz-box-shadow: 2px 11px 38px -5px rgba(0,0,0,0.47);
+box-shadow: 2px 11px 38px -5px rgba(0,0,0,0.47);
+  }
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+  .dropdown-content a:hover {
+  background-color: #EAEAEA   ; 
+  }
+  .leave-polacy-dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 999;
+  }
+  .leave-polacy-dropdown:hover .dropbtn {
+  background-color: #0395FB;
+  }
+  
+  .footer-bottom {
+    background-color: #2a2975;
+     width: 100%;
+/* 	border-top:1px solid #0d033f; */
+	bottom:0;
+	
+}
+
+.copyright {
+    color: #fff;
+    padding: 4px 0;
+	text-align:center;
+}
+#project_invoice_list_table tbody tr td p{
+	border-bottom:2px solid #dddddd;
+}
+#project_invoice_list_table  thead{
+	background: #9cdeff;
+
+}
+.superAdminFooter{
+	position:fixed;
+	background-color: #2a2975;
+	padding:5px;
+	height: 30px;
+	width:100%;
+	margin-bottom:0px;
+	bottom:0 !important;
+}
+
+#panel-heading-custom1{
+	background-color:lightblue;
+	
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans.xsd   
+http://www.springframework.org/schema/context    
+http://www.springframework.org/schema/context/spring-context.xsd   
+http://www.springframework.org/schema/mvc  
+http://www.springframework.org/schema/mvc/spring-mvc.xsd     
+http://www.springframework.org/schema/tx     
+http://www.springframework.org/schema/tx/spring-tx.xsd
+http://www.springframework.org/schema/task
+http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<beans:bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<beans:property name="defaultLocale" value="en" />
+	</beans:bean>
+	<beans:bean id="lic"
+		class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+		<beans:property name="paramName" value="language" />
+	</beans:bean>
+	<!-- properties file cfg -->
+
+	<!-- <beans:bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<beans:property name="basename" value="resources/messages" />
+	</beans:bean> -->
+	<context:annotation-config />
+	<context:component-scan base-package="com.asrm.*" />
+	<context:property-placeholder
+		location="classpath:resources/database.properties,classpath:resources/common.properties"
+		ignore-unresolvable="true" />
+	<tx:annotation-driven transaction-manager="hibernateTransactionManager" />
+	<mvc:annotation-driven />
+	<mvc:default-servlet-handler />
+<!-- 	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:resources mapping="/profilepic/**" location="/resources/profilepic/" />
+	<mvc:resources mapping="/profile_images/**" location="${upload.image.file.path.view}" />
+	<mvc:resources mapping="/pie_chart/**"
+		location="${document.root.piechartPath.view}" /> -->
+
+	<beans:bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<beans:property name="definitions">
+			<beans:list>
+				<beans:value>/WEB-INF/layouts/layouts.xml</beans:value>
+				<beans:value>/WEB-INF/layouts/lmsViews.xml</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
+
+
+
+	<!-- <beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver"> -->
+	<beans:bean id="tilesViewResolver"
+		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+		<beans:property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles3.TilesView" />
+		<beans:property name="order" value="1" />
+	</beans:bean>
+	<beans:bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/" />
+		<beans:property name="suffix" value=".jsp" />
+		<beans:property name="order" value="2" />
+	</beans:bean>
+
+	<task:annotation-driven />
+
+	<!-- <beans:bean id="HolidayBean" class="com.lexicon.scheduling.HolidayBean" /> -->
+
+	<!-- <mvc:resources mapping="/resources/**" location="/resources/" /> <mvc:annotation-driven 
+		/> -->
+	<!-- <bean id="messageSource" -->
+	<!-- class="org.springframework.context.support.ReloadableResourceBundleMessageSource"> -->
+	<!-- <property name="basename" value="/WEB-INF/messages" /> -->
+	<!-- </bean> -->
+	<!-- Configure the multipart resolver -->
+	<!-- <beans:bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" /> -->
+	<!-- Configure JDBC Connection -->
+	<beans:bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="${database.driver}" />
+		<beans:property name="url" value="${database.url}" />
+		<beans:property name="username" value="${database.user}" />
+		<beans:property name="password" value="${database.password}" />
+
+	</beans:bean>
+
+	<beans:bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<beans:property name="dataSource" ref="dataSource" />
+		<beans:property name="annotatedClasses">
+			<beans:list>
+				 <beans:value>com.asrm.model.StudentLogin</beans:value>
+				<beans:value>com.asrm.model.StudentRegistration</beans:value>
+				<beans:value>com.asrm.model.StudentAssgDetails</beans:value>
+			
+			</beans:list>
+		</beans:property>
+		<beans:property name="hibernateProperties">
+			<beans:props>
+				<beans:prop key="hibernate.dialect">${hibernate.dialect}</beans:prop>
+				<beans:prop key="hibernate.show_sql">${hibernate.show_sql}</beans:prop>
+				<!-- <beans:prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</beans:prop> -->
+
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+	<beans:bean id="hibernateTransactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<beans:property name="sessionFactory" ref="sessionFactory" />
+	</beans:bean>
+	<!-- configure hibernate session factory for SecondDB database -->
+
+
+<!-- 
+	<mvc:interceptors>
+		<beans:bean class="com.lexicon.common.interceptor.LexiconInterceptor" />
+	</mvc:interceptors> -->
+
+
+	<!-- Mail sender bean -->
+	<beans:bean class="org.springframework.mail.javamail.JavaMailSenderImpl"
+		id="mailSender">
+		<beans:property name="host" value="lexiconinfotech.co.in" />
+		<beans:property name="port" value="587" />
+		<beans:property name="protocol" value="smtp" />
+		<beans:property name="username" value="no_reply@lexiconinfotech.co.in" />
+		<beans:property name="password" value="Reset#123" />
+		<beans:property name="javaMailProperties">
+			<beans:props>
+				<beans:prop key="mail.smtp.auth">true</beans:prop>
+				<beans:prop key="mail.smtp.starttls.enable">true</beans:prop>
+				<beans:prop key="mail.smtp.ssl.trust">*</beans:prop>
+				<beans:prop key="mail.smtp.quitwait">false</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+
+</beans:beans>
